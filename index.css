@@ -6,12 +6,12 @@
     background-color: #1B3C53 !important;
 }
 
-#body{
-    background-color: #badfdb;
+body{
+    background-color: #aac3da;
 }
 
 #ponentes p{
-    color: aliceblue;
+    color: rgb(6, 33, 56);
 }
 
 #lugarfechas img{
@@ -20,4 +20,8 @@
 
 #footer a, p{
     color: aliceblue;
+}
+
+#section{
+    scroll-margin-top: 86;
 }
