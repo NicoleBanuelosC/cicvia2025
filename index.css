@@ -1,27 +1,102 @@
-#footer{
+
+#footer {
     background-color: #456882;
 }
 
-#header{
+#header {
     background-color: #1B3C53 !important;
 }
 
-body{
-    background-color: #aac3da;
-}
-
-#ponentes p{
-    color: rgb(6, 33, 56);
-}
-
-#lugarfechas img{
-    max-width: 100%;
-}
-
-#footer a, p{
+#footer a, #footer p {
     color: aliceblue;
 }
 
-#section{
-    scroll-margin-top: 86;
+/* CARRUSEL */
+#main #carrusel {
+    position: relative;
+    height: 50vh; /* Altura fija para que el overlay funcione */
+    overflow: hidden;
+}
+
+#main .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.65;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(27, 60, 83, 0.85); 
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.overlay h2,
+.overlay p,
+.overlay .btn {
+    color: white !important;
+}
+
+.overlay .container {
+    z-index: 11; /* Asegura que el texto esté por encima del fondo */
+}
+
+#ponentes {
+    background-color: #f8f9fa;
+    padding: 3rem 0;
+}
+
+.card {
+    background-color: white;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-text {
+    color: #333 !important;
+    font-size: 0.9rem;
+}
+
+/* ESPACIADO ENTRE SECCIONES */
+.py-5 {
+    padding: 3rem 0 !important;
+}
+
+body {
+    background-color: #1252848f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#lugarfechas img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.navbar-nav .nav-link.active {
+    color: #fff !important;
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(255,255,255,0.7);
 }
